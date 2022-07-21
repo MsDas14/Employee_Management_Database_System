@@ -1,0 +1,36 @@
+package com.employee.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.employee.dto.AssignEmployeetoProject;
+import com.employee.entity.Project;
+//import com.employee.repository.EmpRepo;
+import com.employee.repository.ProjRepo;
+
+@RestController
+@RequestMapping("/api/employee/")
+@CrossOrigin("http://localhost:3000")
+
+public class EmpProjController {
+	
+	@Autowired
+	private ProjRepo Prepo;
+	
+	@PostMapping("/newProjectAssign")
+	public Project saveInfo(@RequestBody AssignEmployeetoProject newRequest) {
+		return Prepo.save(newRequest.getProject());
+	}
+	
+	@GetMapping("/getList")
+	public List<Project> findAll(){
+		return Prepo.findAll();
+	}
+}

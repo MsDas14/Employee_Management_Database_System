@@ -1,0 +1,24 @@
+package com.employee.dto;
+
+import com.employee.entity.Project;
+
+public class AssignEmployeetoProject {
+
+	private Project project;
+	
+	public AssignEmployeetoProject() {
+		;
+	}
+
+	public AssignEmployeetoProject(Project project) {
+		this.project = project;
+	}
+
+	public Project getProject() {
+		return project;
+	}
+
+	public void setProject(Project project) {
+		this.project = project;
+	}
+}
