@@ -1,4 +1,4 @@
-# Employee_Management_Database_System (CRUD)
+# Employee_Management_System (CRUD)
 Full-stack Web Application using SpringBoot &amp; React JS (RestFull API).
 
 
