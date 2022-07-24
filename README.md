@@ -4,11 +4,12 @@ Full-stack Web Application using SpringBoot &amp; React JS (RestFull API).
 
 ### Used Technologies & Tools
 * Front-end
-  * React JS
-  * Bootstrap
+  * React v18.2.0
+  * React-Bootstrap v2.4.0
+  * Axios v0.27.2
 * Back-end
-  * SpringBoot 2.x.x (Making REST API) [Java 8]
-  * MySQL
+  * Spring v5.3.19 [Java v18.0.1.1]
+  * MySQL v8.0.29
 
 ### Screenshots
 Homepage           |
